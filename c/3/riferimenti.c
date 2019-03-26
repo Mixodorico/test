@@ -9,11 +9,22 @@ void stampaPuntatori(int alfa, int beta, int* heapPointer)
    printf("alfa -> %d, beta -> %d, pointer -> %p\n", alfa, beta, heapPointer);
 }
 
+void proceduraSwap(int *alfa, int *beta)
+{
+   int temp;
+   temp = *alfa;
+   *alfa = *beta;
+   *beta = temp;
+}
+
+
 int main()
 {
 int alfa = 1990;
 int beta = 2019;
 int *heapPointer;     // dichiarazione puntatore: i puntatori fanno riferimento allo heap
+
+proceduraSwap(&alfa, &beta); 
 
 heapPointer = &alfa;   // assume l'indirizzo di "valore" 
 //*heapPointer = alfa; //useless
