@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+
+int main
+{
+nuovoTipo nomeTipo;
+
+return 0;
+}
+
+typedef struct nuovoTipo
+{
+int intero;
+float floating;
+char[100] stringa;
+};
