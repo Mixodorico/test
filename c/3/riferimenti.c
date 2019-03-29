@@ -9,6 +9,7 @@ void stampaPuntatori(int alfa, int beta, int* heapPointer)
    printf("alfa -> %d, beta -> %d, pointer -> %p\n", alfa, beta, heapPointer);
 }
 
+// un esempio del perche' sia interessante utilizzare i riferimenti
 void proceduraSwap(int *alfa, int *beta)
 {
    int temp;

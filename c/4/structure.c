@@ -23,6 +23,12 @@ char* stringa;
 char stringaDimensionata[12];
 }; // possiamo anche non mettere il nome
 
+// struttura semplice
+struct nomeStruttura2
+{
+int x,y,z;
+}IDStruttura;
+
 // tipo di dato
 typedef struct nomeStrutturaUsata // nome della struttura opzionale
 {
@@ -67,10 +73,14 @@ int main()
 {
 // lavoriamo con la struttura
 struct nomeStruttura strutt = {"ciao mondo!", "ciaooooo"};
-
 nuovoTipo nomeTipo;
 nomeTipo.intero = 1990;
 
+struct nomeStruttura2 *strutturaPuntatore;
+strutturaPuntatore = &IDStruttura;
+strutturaPuntatore -> x = 1990; //-> operator to enter in single elements of struct
+strutturaPuntatore -> y = 1991;
+strutturaPuntatore -> z = 1992;
 //nomeTipo.stringa[] = {'a','a','a','\0'};
 
 /********** CASTING ***********/
